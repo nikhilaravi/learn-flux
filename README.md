@@ -6,7 +6,7 @@ Flux is a client side application architecture that facilitates one way data flo
 
 Simple structure of a flux application:
 
-1. The data/business logic for the application is kept in **stores**. Stores register callbacks with a central **dispatcher** module which is similar to a [pub-sub system](link).
+1. The data/business logic for the application is kept in **stores**. Stores register callbacks with a central **dispatcher** module which is similar to a [pub-sub system](https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern).
 
 2.Users interact with a **view**. In response, an **action** (e.g. new message) containing a payload is created using an **action-creator** helper method.
 
@@ -31,7 +31,7 @@ Has two main functions:
 
 2. Take requests for actions from the views
 
-A dispatcher differs from a pub-sub system in that every payload is dispatched to every registered callback (no subscription to events) and callbacks can be deferred until other callbacks are executed (to allow for dependancies between stores - see [Extensions](link)).
+A dispatcher differs from a pub-sub system in that every payload is dispatched to every registered callback (no subscription to events) and callbacks can be deferred until other callbacks are executed (to allow for dependancies between stores - see [Extensions](#).
 
 ###Stores
 
@@ -461,9 +461,9 @@ We'll also be using browserify to bundle up our react components.
 
 9. Run the project using `npm run dev` in your terminal and navigate to `www.localhost//8080` to view your app!
 
-Notes:
+####Notes:
 * make sure you add `"use strict!"` at the top of all your jsx files!
 * TESTS are coming....
 
-Extensions:
+####Extensions:
 * The dispatcher also has a [`waitFor()` method](link) that allows for dependancies between stores - stores can wait for another store to update before updating themselves. Try and extend the 'todo' app implement the `waitFor()` method.

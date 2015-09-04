@@ -1,0 +1,82 @@
+body {
+  background-color: white;
+  padding-top: 20px;
+  font-family: Raleway sans-serif;
+}
+
+.app-container {
+  margin: auto;
+  text-align: center;
+  background-color: #FF9966;
+  width: 50%;
+  margin: auto;
+  padding-top: 5px;
+  border-radius: 5px;
+  height: 50%;
+}
+
+  .todo-text {
+    padding:8px 15px;
+    background:rgba(50, 50, 50, 0.2);
+    border:0px solid #dbdbdb;
+    font-size: 15px;
+    margin: 0 10px;
+  }
+
+  .todo-text:focus {
+    outline: none;
+  }
+
+  .todo-submit {
+    position:relative;
+    padding:6px 15px;
+    left:-8px;
+    margin: 0 5px;
+    border:2px solid #207cca;
+    background-color:#99CCCC
+    color:#fafafa;
+    font-size: 15px;
+  }
+
+  .todo-submit:hover  {
+    background-color:#fafafa;
+    color:#207cca;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .list-items {
+    text-align: center;
+  }
+
+    .incomplete {
+      border-width: thin;
+      cursor: pointer;
+      text-align: center;
+      margin: auto;
+      display: inline-block;
+      list-style-type: none;
+      font-size: 30px;
+    }
+
+    .incomplete:hover  {
+      cursor: pointer;
+    }
+
+    .completed  {
+      text-decoration: line-through;
+      cursor: pointer;
+      text-align: center;
+      margin: auto;
+      list-style-type: none;
+      display: inline-block;
+      font-size: 30px;
+    }
+
+    .incomplete:hover  {
+      cursor: pointer;
+    }

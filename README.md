@@ -31,7 +31,7 @@ Has two main functions:
 
 2. Take requests for actions from the views
 
-A dispatcher differs from a pub-sub system in that every payload is dispatched to every registered callback (no subscription to events) and callbacks can be deferred until other callbacks are executed (to allow for dependancies between stores - see [Extensions](#).
+A dispatcher differs from a pub-sub system in that every payload is dispatched to every registered callback (no subscription to events) and callbacks can be deferred until other callbacks are executed (to allow for dependancies between stores - see [Extensions](https://github.com/nikhilaravi/learn-flux#extensions).
 
 ###Stores
 

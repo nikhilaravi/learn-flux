@@ -8,7 +8,7 @@ Simple structure of a flux application:
 
 1. The data/business logic for the application is kept in **stores**. Stores register callbacks with a central **dispatcher** module which is similar to a [pub-sub system](https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern).
 
-2.Users interact with a **view**. In response, an **action** (e.g. new message) containing a payload is created using an **action-creator** helper method.
+2.  Users interact with a **view**. In response, an **action** (e.g. new message) containing a payload is created using an **action-creator** helper method.
 
 3. The **action** is sent to the central **dispatcher** which calls the relevant data **store**.
 
